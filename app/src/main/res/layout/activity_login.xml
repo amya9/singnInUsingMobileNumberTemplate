@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_g_mdpi"
+    tools:context=".PhoneNumber">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Authentication"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/country_code_et"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="91"
+            android:textSize="30sp"
+            android:backgroundTint="@android:color/black"
+           />
+
+        <EditText
+            android:id="@+id/phnNumber_et"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="Mobile Number"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:inputType="phone"
+            android:backgroundTint="@android:color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate otp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/otp_generation"
+        />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:id="@+id/generate_progress_bar"/>
+
+</LinearLayout>
